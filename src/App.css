@@ -380,6 +380,7 @@ body {
 }
 
 /* reputation */
+
 .reputation-container {
   display: flex;
   gap: 40px;
@@ -1019,12 +1020,14 @@ body {
   background-color: #1a68d1;
 }
 
+
 /* Yandex */
 .YandexMap{
 
   margin-top: 70px;
 
 }
+
 
 
 /* searh-container */

@@ -21,12 +21,14 @@ const YandexMap = () => {
         setIsMapReady(true);
       });
     } else {
+
       const script = document.createElement('script');
       script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7b7f5ae9-0f0e-4b75-bc98-f73c6121047f';
       script.onload = () => {
         window.ymaps.ready(() => {
           setIsMapReady(true);
         });
+          script.controls.remove('searchControl');
       };
       document.body.appendChild(script);
     }
