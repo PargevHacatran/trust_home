@@ -1,0 +1,32 @@
+.topbar_wrapper {
+    background: #FFFFFF;
+    padding: 22px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar_title {
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.topbar_right_section {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.topbar_icon_wrapper {
+    position: relative;
+    width: 20px;
+    height: 14px;
+}
+
+.select {
+    border: 0;
+    outline: none;
+    color: #374151;
+}
