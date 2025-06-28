@@ -1,6 +1,6 @@
 // AdminDashboard.jsx
 import React from "react";
-import Dashboard from "./Dashboard/Dashboard";
+import Dashboard from "./Dashboard/Admin";
 import "./AdminDashboard.css";
 import apartment from '../../../public/icons/apartment.svg';
 import  house from '../../../public/icons/house.svg';
@@ -85,14 +85,9 @@ function StatusBadge({ status }) {
   return <span className={`status-badge ${statusClass}`}>{status}</span>;
 }
 
-
-
-
-
 export default function AdminDashboard() {
   return (
     <>
-    <Dashboard>
       <nav className="nav_admin">
       <div className="nav_admin__title">
         <h3>Dashboard</h3></div>
@@ -175,7 +170,6 @@ export default function AdminDashboard() {
           </table>
         </div>
       </div>
-      </Dashboard>
       </>
   );
 }

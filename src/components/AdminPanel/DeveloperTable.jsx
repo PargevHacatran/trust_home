@@ -1,5 +1,5 @@
 import React from 'react'
-import Dashboard from './Dashboard/Dashboard';
+import Dashboard from './Dashboard/Admin';
 const developers = [
   {
     name: "ПИК",
@@ -47,7 +47,6 @@ function StatusBadge({ status }) {
 export default function DeveloperTable() {
   return (
     <div>
-        <Dashboard>
             <nav className="nav_admin">
                 <div className="nav_admin__title">
                     <h3>Застройщики</h3></div>
@@ -102,7 +101,6 @@ export default function DeveloperTable() {
                     </table>
                 </div>
             </div>
-        </Dashboard>
     </div>
   )
 }

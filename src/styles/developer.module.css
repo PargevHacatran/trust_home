@@ -373,3 +373,163 @@
     font-size: 20px;
     margin-right: 3px;
 }
+
+/* Contacts */
+
+.contacts_list_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #D3D5DA;
+}
+
+.contacts_subject_info {
+    display: flex;
+    column-gap: 20px; 
+    align-items: center;
+    flex: 1;
+}
+
+.contacts_subject_block {
+    display: flex;
+    column-gap: 15px;
+}
+
+.contacts_subject_avatar {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+
+.contacts_subject_personal_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.contacts_subject_name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contacts_subject_email {
+    font-size: 12px;
+    color: #6B6E75;
+}
+
+.contacts_info_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.contacts_action_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+}
+
+.contacts_action_icon {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border: 0;
+    outline: none;
+    background: #FFFFFF;
+}
+
+.contacts_list_container {
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    flex: 1;
+    margin-top: 50px;
+    max-height: 850px;
+    overflow-y: scroll;
+}
+
+.contacts_topbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts_topbar_count {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contacts_select_wrapper {
+    display: flex;
+    column-gap: 20px;
+}
+
+.contacts_select {
+    width: 220px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 20px;
+    border: 1px solid #E0E3E8;
+    font-size: 18px;
+    color: #1F2937;
+    outline: none;
+    appearance: none;
+    border-radius: 20px;
+}
+
+.contacts_options {
+    font-size: 18px;
+    color: #6B6E75;
+}
+
+.contacts_options:hover {
+    background: #6B6E75;
+    color: #1F2937;
+    padding: 2px 4px;
+}
+
+.contacts_table_header_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.contacts_main_column_wrapper {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    flex: 1;
+}
+
+.contacts_main_column {
+    text-transform: uppercase;
+    color: #6B6E75;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contacts_action_column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+}
+
+.contacts_params_column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.contacts_params_column {
+    text-transform: uppercase;
+    color: #6B6E75;
+    font-weight: bold;
+    font-size: 14px;
+}

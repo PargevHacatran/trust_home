@@ -3,12 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/HomePage';
 import FindProperty from './Pages/FindPropertyPage';
 import About from './Pages/AboutPage';
-import AdminDashboard from './components/AdminPanel/AdminDashboard';
+import Admin from "./components/AdminPanel/Dashboard/Admin"
 
 import './App.css';
 import Developer from './Pages/Developer';
-import DeveloperTable from './components/AdminPanel/DeveloperTable';
-import ChecksDashboard from './components/AdminPanel/ChecksDashboard';
 
 function App() {
   return (
@@ -18,9 +16,7 @@ function App() {
         <Route path="/find" element={<FindProperty />} />
         <Route path="/about" element={<About />} />
         <Route path='/developer' element={<Developer />} />
-        <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/admin-developers" element={<DeveloperTable/>} />
-        <Route path="/contracts" element={<ChecksDashboard/>} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </div>
   );
