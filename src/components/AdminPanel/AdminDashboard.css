@@ -1,0 +1,278 @@
+/* AdminDashboard.css */
+.dashboard-wrapper {
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #6b7280;
+  padding: 10px;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.stat-change {
+  font-size: 12px;
+  color: #10b981;
+  margin-top: 4px;
+}
+
+.developers-block {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.block-header_docs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 100px;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.status-filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.status-filters span {
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.status-filters span:first-child {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.dev-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+
+.dev-table th, 
+.dev-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  
+
+}
+
+.dev-table th {
+  font-weight: 500;
+  color: #6b7280;
+
+}
+
+.dev-table .group-header {
+  background-color: #f9fafb;
+}
+
+.dev-table .group-header td {
+  font-weight: 600;
+  padding: 8px 12px;
+  border-bottom: none;
+}
+
+.dev-table_docs {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.dev-table_docs th, 
+.dev-table_docs td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dev-table_docs th {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.dev-table_docs .group-header {
+  background-color: #f9fafb;
+}
+
+.dev-table_docs .group-header td {
+  font-weight: 600;
+  padding: 8px 12px;
+  border-bottom: none;
+}
+
+.dev-name {
+  font-weight: 600;
+}
+
+.dev-subtext {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-end {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+.status-sealed {
+  background-color: #9CA3AF;
+  color: #1F2937;
+}
+
+.status-pending {
+  background-color: #dbeafe;
+  color: #152d6d;
+}
+
+.status-blocked {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+
+.link-btn {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+
+
+.show-more {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* New styles for the rating stars */
+.rating {
+  color: #f59e0b;
+  letter-spacing: 2px;
+}
+
+.rating-value {
+  color: #4b5563;
+  margin-left: 4px;
+}
+
+
+
+.table-body{
+  display: flex;
+}
+
+
+.nav_admin{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav_admin__title{
+  font-size: 22px;
+}
+.nav_admin__input input{
+  border-radius: 6px;
+  width: 150px;
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+
+.sorting{
+  display: flex;
+  justify-content: space-between;
+  gap: 14px; 
+}
+.sorting p{
+  font-size: 14px;
+  padding: 4px;
+  color: #6B7280;
+}
+.sorting select{
+  background: #EFEFEF;
+  border: none;
+  width: 135px;
+  height: 29px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+}

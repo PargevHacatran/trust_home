@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about_wrapper {
+    width: 100vw;
+}
+
+.about_main_wrapper {
+    position: relative;
+    max-width: 100vw;
+    height: 500px;
+    background-image: url("../public/img/about/about-bg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_main_conntact {
+    width: 100%;
+    height: 100%;
+    padding: 162px 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.about_main_info_block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.about_main_title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.about_main_description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.about_main_advantures_wrapper {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+.about_advanture {
+    display: flex;
+    column-gap: 8px; 
+    padding: 8px 0;
+}
+
+.about_advanture_icon_wrapper {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.about__main_advanture_title {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 24px;
+}
+
+.about_missions_wrapper {
+    padding: 64px 80px;
+}
+
+.about_missions_list_wrapper {
+    display: flex;
+    column-gap: 32px;
+    justify-content: center;
+}
+
+.about_mission {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 48px 24px;
+}
+
+.about_mission_icon_wrapper {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about_mission_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+}
+
+.about_mission_title {
+    text-align: center;
+    color: #111827;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.about_mission_description {
+    text-align: center;
+    color: #4B5563;
+    line-height: 24px;
+    max-width: 346px;
+}
+
+.about_market_problems_wrapper {
+    background-color: #F9FAFB;
+    padding: 64px 270px;
+}
+
+.about_marketproblems_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.about_problem_wrapper {
+    border-radius: 8px;
+    padding: 24px 28px;
+    background: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    column-gap: 16px;
+}
+
+.about_problem_icon_wrapper {
+    position: relative;
+    width: 24px;
+    height: 40px;
+}
+
+.about_problem_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.about_problem_title {
+    font-size: 20px;
+    line-height: 28px; 
+    font-weight: bold;
+    color: #111827;
+}
+
+.about_problem_description {
+    line-height: 24px; 
+    color: #4B5563;
+    max-width: 270px;
+}
+
+.about_problem_solution {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 8px;
+}
+
+.about_problem_solution_icon_wrapper {
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+
+.about_problem_solution {
+    color: #000;
+    font-weight: medium;
+}
+
+.about_howitwork {
+    padding: 64px 272px;
+}
+
+.about_howitwork_list {
+    border-left: 4px solid #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    margin-top: 48px;
+    margin-left: 32px;
+    justify-content: center;
+}
+
+.about_workstep {
+    display: flex;
+    column-gap: 40px; 
+    align-items: center;
+}
+
+.about_workstep_count_wrapper {
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_workstep_count_wrapper {
+    font-size: 20px; 
+    font-weight: bold;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.about_ourstats {
+    background: #1D4ED8;
+    padding: 64px 80px;
+    margin-bottom: -60px;
+}
+
+.about_stats_list {
+    display: flex;
+    column-gap: 32px;
+    margin-top: 48px;
+}
+
+.about_stat {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: center;
+}
+
+.about_stat_count {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+
+.about_stat_description {
+    color: #DBEAFE;
+    line-height: 24px;
+}

@@ -1,0 +1,375 @@
+.developer_wrapper {
+    display: flex;
+    width: 100vw;
+}
+
+.developer_content {
+    background: #F9FAFB;
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+}
+
+.developer_content_struct {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    row-gap: 32px;
+}
+
+.developer_main_stats {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    flex: 1;
+}
+
+/* Dashboard */
+
+.bezie_line_wrapper {
+    max-width: 320px;
+    max-height: 275px;
+}
+
+.bezie_line {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.revenue_wrapper {
+    max-width: 360px;
+    height: 100%;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.revenue_count_wrapper {
+    display: flex;
+    column-gap: 5px;
+    margin: 16px 0;
+}
+
+.revenue_count {
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+.revenue_count_rub_symbol {
+    color: #6B6E75;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.stat_progress_indicator_wrapper {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.last_month_stat {
+    margin-top: 20px;
+} 
+
+.last_month_stat_count {
+    color: #6B6E75;
+}
+
+.last_month_stat_count_sub {
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.amount_column_chart_wrapper {
+    flex: 1;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    height: -webkit-fill-available;
+    padding-bottom: 40px;
+}
+
+.amount_chart_topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount_chart_topbar_link {
+    color: #1F2937;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.amount_chart_topbar_link_sub {
+    font-family: bold;
+    font-size: 18px;
+}
+
+.amount_chart_revenue_wrapper {
+    display: flex;
+    column-gap: 5px;
+}
+
+.amount_chart_revenue {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.amount_chart_revenue_sub {
+    color: #6B6E75;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.amount_chart_diogram_wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+
+.amount_chart_diogram_lines {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #E0E3E8;
+    width: 100%;
+}
+
+.amount_chart_diogram_lines_value {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.amount_chart_diogram_lines_value_count {
+    color: #A3A5AB;
+    background: #fff;
+    padding-right: 3%;
+}
+
+.amount_chart_cols_wrapper {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    padding: 0 50px;
+}
+
+.amount_chart_col_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end; 
+    align-items: center;
+}
+
+.amount_chart_col {
+    position: absolute;
+    bottom: 0;
+    background: #1D4ED8;
+    width: 60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    animation: sliceCol 1s forwards;
+    transition: 0.5s;
+}
+
+.amount_chart_col_text {
+    position: relative;
+    color: #6B6E75;
+    bottom: -16%;
+}
+
+.deals_overview_wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px; 
+    margin-top: 50px;
+}
+
+.deal_cart_wrapper {
+    padding: 40px 20px; 
+    border-radius: 20px;
+    background: #FFFFFF;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.deal_cart_icon_wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.deal_cart_main_info {
+    margin-top: 10px;
+}
+
+.deal_cart_count_wrapper {
+    display: flex;
+    column-gap: 10px; 
+    align-items: center;
+}
+
+.deal_cart_count {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.deal_cart_title_wrapper {
+    margin-top: 10px;
+}
+
+.deal_cart_title {
+    font-size: 18px; 
+    color: #6B6E75;
+    font-weight: medium;
+}
+
+@keyframes sliceCol {
+  from {
+    height: 0;
+  } to {
+    height: var(--h);
+  }
+}
+
+/* Deals */
+
+.deals_header_wrapper {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deals_header_button {
+    background: #1D4ED8;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    border: 0;
+    outline: none;
+}
+
+.deals_list_wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+
+.deal_wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.col_total_stat_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.col_stat_info_wrapper {
+    padding: 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.col_stat_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.col_stat_revenue {
+    color: #6B6E75;
+}
+
+.col_stat_revenue_sub {
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.col_stat_border {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: 15px;
+}
+
+.deal_item {
+    background: #FFFFFF;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.deal_main_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.deal_topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deal_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.deal_icon_wrapper {
+    position: relative;
+    width: 12px;
+    height: 12px;
+}
+
+.deal_subject_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 10px;
+}
+
+.deal_subject_param {
+    color: #6C717B;
+    font-size: 14px;
+}
+
+.deal_price_wrapper {
+    display: flex;
+    column-gap: 5px;
+    margin-top: 16px;
+}
+
+.deal_price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.deal_price_sub {
+    color: #6B6E75;
+    font-size: 20px;
+    margin-right: 3px;
+}
