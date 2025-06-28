@@ -41,11 +41,21 @@ import YandexMap from "../components/YandexMaps/YandexMap";
                 </div>
               </div>
             </section>
+         
+            <section className="verified-listings section-wrapper">
+              <h2 className="verified-listings_title">Верифицированные объекты</h2>
+              <p className="verified-listings_desc">Каждое объявление проходит тщательную проверку и имеет полную <br />  историю объекта</p>
+          <Items/>     
+          <div className="YandexMap">
+            <h3>Интерактивная карта</h3>
+           <YandexMap/>       
+          </div>
 
             <section className="verified-listings section-wrapper">
               <h2 className="verified-listings_title">Верифицированные объекты</h2>
               <p className="verified-listings_desc">Каждое объявление проходит тщательную проверку и имеет полную <br />  историю объекта</p>
           <Items/>            
+            </section>
             </section>
 
             <section className="reputation section-wrapper">
@@ -53,7 +63,6 @@ import YandexMap from "../components/YandexMaps/YandexMap";
             </section>
 
 
-          <YandexMap/>
 
 
 

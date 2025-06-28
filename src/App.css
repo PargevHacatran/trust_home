@@ -380,7 +380,7 @@ body {
 }
 
 /* reputation */
-/* Reputation.css */
+
 .reputation-container {
   display: flex;
   gap: 40px;
@@ -1019,6 +1019,16 @@ body {
 .find-button:hover {
   background-color: #1a68d1;
 }
+
+
+/* Yandex */
+.YandexMap{
+
+  margin-top: 70px;
+
+}
+
+
 
 /* searh-container */
 .searh-container {

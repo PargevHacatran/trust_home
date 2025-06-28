@@ -1,36 +1,27 @@
-  import React, { useEffect, useState } from 'react';
-  import './YandexMap.css';
+import React, { useEffect, useState } from 'react';
+import './YandexMap.css';
+import dogma from '../../../public/img/map/dogma.jpg';
+import tochno from '../../../public/img/map/tochno.jpg';
+import south from '../../../public/img/map/south.jpg';
 
-  const YandexMap = () => {
-    const [isMapReady, setIsMapReady] = useState(false);
-    const [mapInitialized, setMapInitialized] = useState(false);
-    const [coordinates, setCoordinates] = useState([44.987692, 38.932787]);
+const YandexMap = () => {
+  const [isMapReady, setIsMapReady] = useState(false);
+  const [mapInitialized, setMapInitialized] = useState(false);
 
-  const geosuggestApiUrl = 'https://api.geosuggest.io/v1/search';
-
-  const getCoordinatesFromGeosuggest = async (address) => {
-    try {
-      const response = await fetch(`${geosuggestApiUrl}?text=${encodeURIComponent(address)}&key=7b7f5ae9-0f0e-4b75-bc98-f73c6121047f`);
-      const data = await response.json();
-      if (data && data.results && data.results.length > 0) {
-        const { lat, lng } = data.results[0].geometry.location;
-        setCoordinates([lat, lng]);
-      } else {
-        console.warn('No results found for the address');
-      }
-    } catch (error) {
-      console.error('Error fetching coordinates:', error);
-    }
-  };
+  // Пример координат
+  const [coordinates, setCoordinates] = useState([
+    [45.109209, 38.916752],
+    [45.013390, 39.080434],
+    [45.070734, 39.037108]  
+  ]);
 
   useEffect(() => {
-    // Проверяем, загружен ли объект ymaps
     if (window.ymaps) {
       window.ymaps.ready(() => {
-        setIsMapReady(true); // Устанавливаем флаг, что API готово
+        setIsMapReady(true);
       });
     } else {
-      // Загружаем скрипт Яндекс.Карт, если ymaps не найден
+
       const script = document.createElement('script');
       script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7b7f5ae9-0f0e-4b75-bc98-f73c6121047f';
       script.onload = () => {
@@ -45,30 +36,40 @@
 
   useEffect(() => {
     if (isMapReady && !mapInitialized) {
-      // Инициализируем карту внутри ready()
       const map = new window.ymaps.Map('map', {
-        center: coordinates,
-        zoom: 15,
+        center: coordinates[0],
+        zoom: 11,
       });
 
-      const placemark = new window.ymaps.Placemark(coordinates, {
-        balloonContent: 'Республика Адыгея, Тахтамукайский район, п.г.т Яблоновский, улица Калинина, 2/1',
+      // Добавляем метки с кастомными иконками
+      coordinates.forEach((coord, index) => {
+        const placemark = new window.ymaps.Placemark(coord, {
+          balloonContent: `Точка ${index + 1}`,
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: getIconUrl(index), // функция ниже возвращает URL иконки
+          iconImageSize: [32, 32],
+          iconImageOffset: [-16, -32],
+        });
+        map.geoObjects.add(placemark);
       });
 
-      map.geoObjects.add(placemark);
       map.controls.remove('searchControl');
-      setMapInitialized(true); // После инициализации устанавливаем флаг
+      setMapInitialized(true);
     }
   }, [isMapReady, mapInitialized, coordinates]);
 
-  useEffect(() => {
-    // Выполняем запрос на геокодирование только один раз при загрузке
-    getCoordinatesFromGeosuggest('Республика Адыгея, Тахтамукайский район, п.г.т Яблоновский, улица Калинина, 2/1');
-  }, []);
+  // Псевдо-иконки для примера (можно заменить на свои)
+  const getIconUrl = (index) => {
+    const icons = [
+      dogma, //  иконка 1
+      tochno, // иконка 2
+      south   // иконка 3
+    ];
+    return icons[index % icons.length];
+  };
 
-  return (
-    <div id="map" className="map"></div>
-  );
+  return <div id="map" className="map"></div>;
 };
 
 export default YandexMap;
