@@ -61,7 +61,7 @@ const YandexMap = () => {
   const getIconUrl = (index) => {
     const icons = [
       dogma, //  иконка 1
-      tochno,   // иконка 2
+      tochno, // иконка 2
       south   // иконка 3
     ];
     return icons[index % icons.length];
