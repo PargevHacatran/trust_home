@@ -1,0 +1,199 @@
+.messanger {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.messanger_wrapper {
+    position: relative;
+    display: flex;
+    background: #FFFFFF;
+    flex: 1;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.chat_list_wrapper {
+    position: relative;
+    height: 100%;
+    border-right: 1px solid #E0E3E8;
+    max-width: 400px;
+    padding: 30px;
+    max-height: 925px;
+    overflow-y: scroll;
+}
+
+.chat_list_title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.chat_list_warning {
+    background: #E0E3E8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.chat_list_warning_text {
+    font-weight: medium;
+}
+
+.chat_list_warning_text_link {
+    text-decoration: underline;
+    color: #4A86E4;
+    margin-left: 5px;
+}
+
+.chat_list_items_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 40px;
+}
+
+.chat_item {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.chat_item_icon_wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.chat_item_username_wrapper {
+    display: flex;
+    align-items: center;
+} 
+
+.chat_item_username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.diolog_window_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.diolog_messages_list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+}
+
+.message_item {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.message_item:hover {
+    background: #E0E3E8;
+    cursor: pointer;
+}
+
+.message_info {
+    display: flex;
+    column-gap: 10px;
+}
+
+.message_user_icon_wrapper {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+
+.message_topbar {
+    display: flex;
+    column-gap: 10px;
+}
+
+.message_username {
+    font-weight: bold;
+}
+
+.messgae_time, .message_text {
+    color: #6B6E75;
+}
+
+.diolog_window_topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    border-bottom: 1px solid #E0E3E8;
+}
+
+.diolog_window_companion_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px; 
+    flex: 1;
+}
+
+.diolog_window_companion_name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.diolog_window_companion_role {
+    color: #6B6E75;
+}
+
+.diolog_window_information_icon_wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.send_message_wrapper {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    border: 1px solid #E0E3E8;
+    border-radius: 20px;
+}
+
+.send_message_input_area {
+    font-size: 18px;
+    color: #1F2937;
+    outline: none;
+    flex: 1;
+    border: 0;
+}
+
+.send_message_input_area::placeholder {
+    color: #6B6E75;
+}
+
+.send_message_input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    border-radius: 20px;
+}
+
+.send_message_input_icon_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.send_message_button {
+    border: 0;
+    background: transparent;
+}
