@@ -7,6 +7,8 @@ import Admin from "./components/AdminPanel/Dashboard/Admin"
 
 import './App.css';
 import Developer from './Pages/Developer';
+import LoginPage from './pages/LoginPage';
+import RegistrationPage from './pages/RegistrationPage';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path='/developer' element={<Developer />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<LoginPage/>} />
+        <Route path="/signin" element={<RegistrationPage />} />
       </Routes>
     </div>
   );

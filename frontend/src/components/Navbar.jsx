@@ -15,8 +15,8 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-auth">
-        <button className="login">Войти</button>
-        <button className="register">Регистрация</button>
+        <button className="login"><Link to="login">Войти</Link> </button>
+        <button className="register"> <Link to='signin'> Регистрация</Link></button>
       </div>
     </nav>
   );
