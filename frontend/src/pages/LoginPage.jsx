@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useAuth } from '../Auth/AuthContext';
+// import { useAuth } from '../Auth/AuthContext';
 import axios from '../api/axios';
 
 export default function LoginPage() {
@@ -11,7 +11,7 @@ export default function LoginPage() {
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     
-    const auth = useAuth();
+    // const auth = useAuth();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -124,7 +124,7 @@ export default function LoginPage() {
                     </form>
                     
                     <p className="text">
-                        Нет аккаунта? <NavLink to="/registration">Регистрация</NavLink>
+                        Нет аккаунта? <NavLink to="/signin">Регистрация</NavLink>
                     </p>
                 </div>
             </div>

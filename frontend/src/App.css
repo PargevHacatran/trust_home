@@ -63,18 +63,29 @@ body {
   cursor: pointer;
   font-weight: bold;
   border-radius: 6px;
+  
 }
 
+.login a{
+  text-decoration: none;
+
+}
 .login {
   background-color: transparent;
   color: #1d4ed8;
   border: 1px solid #1d4ed8;
-}
+  text-decoration: none;
 
+}
+.register a {
+   color: white;
+  text-decoration: none;
+
+}
 .register {
   background-color: #1d4ed8;
-  color: white;
   border: none;
+
 }
 
 .login:hover {
@@ -1198,6 +1209,78 @@ body {
 
 
 /* form-control */
+.wrapper{
+   width: 1280px;
+    margin: 50px auto;
+}
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Контейнер занимает всю ширину */
+    max-width: 400px; /* Максимальная ширина контейнера */
+    overflow: hidden;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 450px;
+
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #001afffb;
+    color: #fff;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .form-control {
     position: relative;
     margin: 15px 0;
@@ -1238,3 +1321,5 @@ body {
     transform: translateY(-20px);
     font-size: 14px;
 }
+
+
