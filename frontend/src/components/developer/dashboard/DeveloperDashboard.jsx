@@ -10,6 +10,8 @@ export const DeveloperDashboard = () => {
         <div className={styles.deveoper_content_wrapper}>
             <TopBar
                 title="Dashboard"
+                btnText="Перейти в телеграм"
+                btnOnClick={() => {}}
             />
 
             <div className={styles.developer_content_struct}>

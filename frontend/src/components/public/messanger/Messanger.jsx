@@ -9,6 +9,8 @@ export const Messanger = () => {
         <div className={styles.messanger}>
             <TopBar 
                 title="Мессенджер"
+                btnText="+ Добавить чат"
+                btnOnClick={() => {}}
             />
 
             <div className={styles.messanger_wrapper}>

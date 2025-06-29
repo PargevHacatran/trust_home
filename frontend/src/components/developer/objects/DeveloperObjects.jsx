@@ -8,6 +8,8 @@ export const DeveloperObjects = () => {
         <div className={styles.developer_content_wrapper}>
             <TopBar
                 title="Объекты"
+                btnText="+ Создать объект"
+                btnOnClick={() => {}}
             />
 
             <div className={styles.developer_content_struct}>

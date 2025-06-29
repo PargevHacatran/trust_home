@@ -23,7 +23,7 @@ async def open_menu_lawyers(call: CallbackQuery):
     else:
         await call.message.answer("Вас нет в списке Юристов\n"
                                   "Напишите нам на почту exemple@gmail.com для добавления вас в списки\n"
-                                  "В письме укажите ФИО, telegram id, ТрастДом id, и бла-бла-бла")
+                                  "В письме укажите ФИО, telegram id, ТрастДом id и компанию, в которой работаете")
 
 
 @lawyer_router.callback_query(F.data == "open_db_request")

@@ -9,6 +9,8 @@ export const DeveloperDeals = () => {
         <div className={styles.developer_content_wrapper}>
             <TopBar
                 title="Dashboard"
+                btnText="+ Добавить сделку"
+                btnOnClick={() => {}}
             />
 
             <div className={styles.developer_content_struct}>
