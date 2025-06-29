@@ -350,6 +350,7 @@ body {
   background-color: #153ea9;
 }
 
+
 /* Верификация */
 .item-verified {
   background-color: #e8f5e9;
@@ -1188,4 +1189,52 @@ body {
   } to {
     clip-path: rect(0 100% 100% 0 round 0%);
   }
+}
+
+
+
+
+
+
+
+/* form-control */
+.form-control {
+    position: relative;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    font-size: 16px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus ~ label,
+.form-control input:valid ~ label {
+    color: lightblue;
+    transform: translateY(-20px);
+    font-size: 14px;
 }
