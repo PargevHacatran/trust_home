@@ -136,7 +136,7 @@ export default function AdminDashboard() {
           </table>
 
 
-            <div className="block-header_docs">
+          <div className="block-header_docs">
                 <h2>Последние договоры</h2>
               <button className="add-btn">Все договоры</button>
           </div>

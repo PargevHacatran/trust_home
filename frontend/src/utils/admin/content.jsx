@@ -5,5 +5,5 @@ import ChecksDashboard from "../../components/AdminPanel/ChecksDashboard";
 export const content = {
     "dashboard": <AdminDashboard />,
     "developers": <DeveloperTable />,
-    "analitic": <ChecksDashboard />
+    "documents": <ChecksDashboard />
 };
