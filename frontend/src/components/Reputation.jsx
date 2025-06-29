@@ -3,7 +3,7 @@ import calendarIcon from '../../public/icons/calendar.svg';
 import inProgressIcon from '../../public/icons/time.svg';
 import starIcon from '../../public/icons/star.svg';
 import handshakeIcon from '../../public/icons/handshake.svg';
-import seller_avatar from '../../public/img/User.png';
+import seller_avatar from '../../public/img/map/dogma.jpg';
 
 function Reputation() {
   return (
@@ -11,7 +11,7 @@ function Reputation() {
       <div className="reputation-left">
         <div className="seller-card">
           <img className= "seller-avatar" src={seller_avatar} alt="Иван Петров" />
-          <h2>Dogma</h2>
+          <h2 className='seller-name'>Dogma</h2>
           <p className="seller-role">Застройщик</p>
           <p className="seller-rating">
             <img src={starIcon} alt="rating" className="icon-inline_star" /> 4.9 <span>(24 отзыва)</span>

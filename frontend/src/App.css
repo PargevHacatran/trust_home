@@ -429,11 +429,18 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 12px;
+  justify-content: center;
+  margin-left: 140px;
 }
+.seller-name{
+    margin-left: 140px;
 
+}
 .seller-role {
   margin-bottom: 4px;
   font-size: 14px;
+  margin-left: 140px;
+
 }
 
 .seller-rating {
@@ -1323,3 +1330,22 @@ center {
 }
 
 
+/* tg bot */
+.telegram-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #0088cc;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.telegram-button:hover {
+  background-color: #0077b0;
+}

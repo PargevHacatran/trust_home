@@ -14,7 +14,7 @@ function FindProperty() {
       <Navbar/>
         <Filter/>
         <div className="searh-container">
-          <div class="search-container_left">
+          <div className="search-container_left">
             <LeftFilter/>
           </div>
           <ObjectsList />

@@ -5,11 +5,13 @@
   import Navbar from '../components/Navbar';
   import Footer from '../components/Footer';
 import YandexMap from "../components/YandexMaps/YandexMap";
-  function Home() {
+import TelegramBot from "../components/TelegramBot";
+function Home() {
     return (
       <>
         <Navbar />
           <div className="home-container">
+            <TelegramBot/>
             <section className="hero">
               <img className="hero-img" src={presentation} alt="Presentation" />
 
@@ -51,11 +53,7 @@ import YandexMap from "../components/YandexMaps/YandexMap";
            <YandexMap/>       
           </div>
 
-            <section className="verified-listings section-wrapper">
-              <h2 className="verified-listings_title">Верифицированные объекты</h2>
-              <p className="verified-listings_desc">Каждое объявление проходит тщательную проверку и имеет полную <br />  историю объекта</p>
-          <Items/>            
-            </section>
+          
             </section>
 
             <section className="reputation section-wrapper">
