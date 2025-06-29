@@ -1,4 +1,5 @@
 import Item from './Item';
+import { Link} from 'react-router-dom';
 
 const sampleItems = [
   {
@@ -47,7 +48,7 @@ function Items() {
           <Item key={index} {...item} />
         ))}
       </div>
-      <button className="view-all">Смотреть все объекты</button>
+      <button className="view-all"><Link to="find">Смотреть все объекты</Link></button>
     </div>
   );
 }
