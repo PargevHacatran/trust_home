@@ -1,20 +1,19 @@
 import { TopBar } from "../../public/TopBar";
 
 import styles from "../../../styles/developer.module.css";
-import { DealsList } from "./DealsList";
-import { Button } from "../../public/Button";
+import { ObjectsList } from "./ObjectsList";
 
-export const DeveloperDeals = () => {
+export const DeveloperObjects = () => {
     return (
         <div className={styles.developer_content_wrapper}>
             <TopBar
-                title="Dashboard"
-                btnText="+ Добавить сделку"
+                title="Объекты"
+                btnText="+ Создать объект"
                 btnOnClick={() => {}}
             />
 
             <div className={styles.developer_content_struct}>
-                <DealsList />
+                <ObjectsList />
             </div>
         </div>
     );

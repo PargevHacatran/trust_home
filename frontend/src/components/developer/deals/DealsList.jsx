@@ -30,7 +30,7 @@ const dealsList = {
         ]
     },
     proposal: {
-        totalPrice: 16900,
+        totalPrice: 7490,
         columnName: "Предложение",
         columnColor: "#429482",
         list: [
@@ -64,7 +64,7 @@ const dealsList = {
         ]
     },
     negotiation: {
-        totalPrice: 20345,
+        totalPrice: 4245,
         columnName: "Переговоры",
         columnColor: "#EF746D",
         list: [
@@ -89,7 +89,7 @@ const dealsList = {
         ]
     },
     contractSend: {
-        totalPrice: 2700,
+        totalPrice: 4245,
         columnName: "Контраты",
         columnColor: "#D377F3",
         list: [
@@ -114,8 +114,8 @@ const dealsList = {
         ]
     },
     deal: {
-        totalPrice: 36534,
-        columnName: "Сдлки",
+        totalPrice: 5245,
+        columnName: "Сделки",
         columnColor: "#459CED",
         list: [
             {

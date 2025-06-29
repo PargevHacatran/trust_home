@@ -1,0 +1,37 @@
+.modal_win {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_win_wrapper {
+    border-radius: 20px;
+    background: #ffffff;
+    width: 600px;
+    padding: 20px;
+}
+
+.modal_win_inputs_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.modal_win_input_area {
+    width: 100%;
+    border: 1px solid #6B6E75;
+    padding: 15px 30px;
+    border-radius: 20px;
+} 
+
+.title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 40px;
+}

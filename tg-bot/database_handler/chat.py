@@ -9,12 +9,13 @@ async def open_db_request():
 
 async def upload_db_request(surname: str, name: str, tg_id: int, trast_id: int, text: str):
     # тут должно быть занесение запроса в базу
-    await bot.send_message(text=f'Поступила заявка на консультацию\n\n'
-                              f'От {surname} {name}\n'
-                              f'telegram id = {tg_id}, trast id = {trast_id}\n\n'
-                              f'Tекст запроса:\n'
-                              f'{text}',
-                           chat_id=921394541)
+    for lawyer_id in [int(admin_id) for admin_id in config('LAWYER').split(',')]:
+        await bot.send_message(text=f'Поступила заявка на консультацию\n\n'
+                                  f'От {surname} {name}\n'
+                                  f'telegram id = {tg_id}, trast id = {trast_id}\n\n'
+                                  f'Tекст запроса:\n'
+                                  f'{text}',
+                               chat_id=lawyer_id)
 
 
 

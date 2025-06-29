@@ -1,23 +1,8 @@
-import { Select } from "./Select"
+import { Button } from "./Button"
 import styles from "../../styles/topbar.module.css";
 import { icons } from "../../utils/public/icons";
 
-const optionsList = [
-    {
-        text: "Месяц",
-        value: "month"
-    },
-    {
-        text: "День",
-        value: "day"
-    },
-    {
-        text: "Год",
-        value: "year"
-    },
-]
-
-export const TopBar = ({ title }) => {
+export const TopBar = ({ title, btnText, btnOnClick }) => {
     return (
         <div className={styles.topbar_wrapper}>
             <div>
@@ -28,10 +13,12 @@ export const TopBar = ({ title }) => {
                     { icons.notification }
                 </div>
                 <div>
-                    <Select
-                        selectClassName={styles.select}
-                        optionsList={optionsList}
-                    />
+                    <Button 
+                        className={styles.topbar_button}
+                        onClick={() =>  btnOnClick()}
+                    >
+                        { btnText }
+                    </Button>
                 </div>
             </div>
         </div>
