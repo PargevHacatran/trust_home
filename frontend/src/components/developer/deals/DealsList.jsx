@@ -115,7 +115,7 @@ const dealsList = {
     },
     deal: {
         totalPrice: 36534,
-        columnName: "Сдлки",
+        columnName: "Сделки",
         columnColor: "#459CED",
         list: [
             {

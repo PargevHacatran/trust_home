@@ -99,32 +99,35 @@ export const Object = ({ imgsList, price, roomsCount, squareMetrs, address, curr
                 <div>
                     <p className={styles.object_description}>{ description }</p>
                 </div>
-                <div className={styles.object_developer_wrapper}>
-                    <div className={styles.object_developer_group}>
-                        <div className={styles.object_developer_img_wrapper}>
-                            <img src={developerInfo.imgURL} alt="" />
-                        </div>
-                        <div className={styles.object_developer_main_info}>
-                            <div>
-                                <p className={styles.object_developer_name}>{ developerInfo.developerName }</p>
+                { developerInfo ?
+                    <div className={styles.object_developer_wrapper}>
+                        <div className={styles.object_developer_group}>
+                            <div className={styles.object_developer_img_wrapper}>
+                                <img src={developerInfo.imgURL} alt="" />
                             </div>
-                            <div className={styles.object_developer_star}>
-                                <div className={styles.object_developer_star_icon_wrapper}>
-                                    { icons.star }
+                            <div className={styles.object_developer_main_info}>
+                                <div>
+                                    <p className={styles.object_developer_name}>{ developerInfo.developerName }</p>
                                 </div>
-                                <p className={styles.object_developer_star_count}>{ developerInfo.developerStars } · { developerInfo.dealsCount } сделок</p>
+                                <div className={styles.object_developer_star}>
+                                    <div className={styles.object_developer_star_icon_wrapper}>
+                                        { icons.star }
+                                    </div>
+                                    <p className={styles.object_developer_star_count}>{ developerInfo.developerStars } · { developerInfo.dealsCount } сделок</p>
+                                </div>
                             </div>
                         </div>
+                        <div>
+                            <Button
+                                className={styles.object_write_developer}
+                                onClick={() => {}}
+                            >
+                                Написать
+                            </Button>
+                        </div>
                     </div>
-                    <div>
-                        <Button
-                            className={styles.object_write_developer}
-                            onClick={() => {}}
-                        >
-                            Написать
-                        </Button>
-                    </div>
-                </div>
+                    : null
+                }
             </div>
         </div>
     );
