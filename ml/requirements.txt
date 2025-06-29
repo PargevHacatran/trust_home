@@ -1,0 +1,11 @@
+transformers 
+torch 
+sentencepiece
+regex
+scipy
+pillow 
+imagehash 
+opencv-python 
+numpy 
+tensorflow 
+scikit-image

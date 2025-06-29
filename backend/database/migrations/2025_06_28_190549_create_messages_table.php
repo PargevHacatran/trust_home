@@ -11,27 +11,20 @@ return new class extends Migration
      */
     public function up() {
         // rooms (чаты/комнаты)
-        Schema::table('rooms', function (Blueprint $table) {
+        Schema::create('rooms', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->json("users_list")->nullable();
             $table->string('type')->default('private'); // private|group
             $table->timestamps();
         });
 
-        // room_user (связь пользователей с чатами)
-        Schema::table('room_user', function (Blueprint $table) {
-            $table->foreignId('room_id')->constrained();
-            $table->foreignId('user_id')->constrained();
-            $table->primary(['room_id', 'user_id']);
-        });
-
         // messages (сообщения)
-        Schema::table('messages', function (Blueprint $table) {
+        Schema::create('messages', function (Blueprint $table) {
             $table->id();
             $table->text('content');
             $table->foreignId('room_id')->constrained();
             $table->foreignId('user_id')->constrained();
-            $table->timestamps();
+            $table->string("time");
         });
     }
     /**

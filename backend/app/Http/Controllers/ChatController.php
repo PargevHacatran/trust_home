@@ -8,8 +8,11 @@ use App\Models\Message;
 use App\Models\Room;
 use Illuminate\Http\Request;
 
+header('Access-Control-Allow-Origin', 'http://localhost:5173');
+
 class ChatController extends Controller
 {
+
    public function send (StoreMessageRequest $request) 
    {
         $message = Message::create([
